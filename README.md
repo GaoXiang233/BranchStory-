@@ -1,7 +1,6 @@
 # 分支故事 - AI驱动的多分支互动小说平台
 
-**项目链接**：[GitHub仓库地址]  
-**线上演示**：[部署URL]  
+**项目链接**：[git@github.com:GaoXiang233/BranchStory-.git]  
 **API模型**：使用通义千问qwen-plus模型  
 
 ## 项目概述
@@ -136,7 +135,7 @@ npm --version
 ### 项目启动
 ```bash
 # 1. 克隆项目
-git clone [仓库地址]
+git clone git@github.com:GaoXiang233/BranchStory-.git
 cd BranchStory
 
 # 2. 安装依赖
