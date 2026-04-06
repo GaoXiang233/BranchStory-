@@ -1,0 +1,243 @@
+/* src/components/StoryEditor.css */
+.story-editor {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.return-home-btn {
+  background-color: #e5e7eb;
+  color: #374151;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.return-home-btn:hover {
+  background-color: #d1d5db;
+}
+
+.remove-choice-btn {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.remove-choice-btn:hover {
+  background-color: #c53030;
+}
+
+.editor-form {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.form-group.readonly {
+  opacity: 0.7;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.readonly-input {
+  background-color: #f7fafc;
+  color: #718096;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.choices-section {
+  margin-top: 20px;
+}
+
+.choice-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.choice-inputs input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.story-nodes {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.node-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.node-item:last-child {
+  border-bottom: none;
+}
+
+.node-item button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.node-item button:first-child {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.node-item button:last-child {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.story-controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.story-selector {
+  flex: 1;
+  min-width: 250px;
+}
+
+.story-selector label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.story-selector select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.new-story-form {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.new-story-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.story-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  background-color: #f7fafc;
+  color: #4a5568;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+  background-color: #edf2f7;
+}
+
+.delete-btn {
+  background-color: #fed7d7;
+  border-color: #feb2b2;
+  color: #c53030;
+}
+
+.delete-btn:hover {
+  background-color: #fc8181;
+}
+
+.no-story-message {
+  text-align: center;
+  padding: 40px;
+  color: #718096;
+  font-size: 16px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .choice-inputs {
+    flex-direction: column;
+  }
+  
+  .node-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .node-item button {
+    margin-top: 5px;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .story-controls {
+    flex-direction: column;
+  }
+  
+  .story-selector, .new-story-form {
+    width: 100%;
+  }
+}
