@@ -1,0 +1,95 @@
+/* src/components/EdgeStatusDashboard.css */
+.edge-status-dashboard {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.dashboard-header h3 {
+  color: #2d3748;
+  margin: 0 0 15px 0;
+  font-size: 1.3rem;
+}
+
+.metrics-section, .player-state-section, .features-section {
+  margin-bottom: 25px;
+}
+
+.metrics-section h4, .player-state-section h4, .features-section h4 {
+  color: #4a5568;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 5px;
+}
+
+.metrics-grid, .state-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.metric-card, .state-card {
+  background-color: white;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.metric-label, .state-label {
+  font-size: 12px;
+  color: #718096;
+  margin-bottom: 5px;
+}
+
+.metric-value, .state-value {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.metric-value.hit {
+  color: #10b981;
+}
+
+.metric-value.miss {
+  color: #f59e0b;
+}
+
+.attribute, .inventory-item {
+  margin-bottom: 3px;
+}
+
+.attribute:last-child, .inventory-item:last-child {
+  margin-bottom: 0;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.feature-check {
+  margin-right: 6px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .metrics-grid, .state-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-list {
+    flex-direction: column;
+  }
+}

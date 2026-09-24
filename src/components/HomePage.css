@@ -1,0 +1,135 @@
+/* src/components/HomePage.css */
+.home-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+.start-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-tertiary {
+  background-color: #e2e8f0;
+  color: #4a5568;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 15px;
+}
+
+.btn-tertiary:hover {
+  background-color: #cbd5e0;
+}
+
+.custom-starter-container {
+  margin-top: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-card h3 {
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.cta {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 0 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d5db;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 300px;
+  }
+}

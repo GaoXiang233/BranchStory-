@@ -1,0 +1,155 @@
+/* src/components/StoryViewer.css */
+.story-viewer {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  min-height: calc(100vh - 100px);
+}
+
+.story-header {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.story-title {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  max-width: calc(100% - 280px); /* Account for the approximate width of both buttons */
+}
+
+
+
+.story-header h2 {
+  color: #2d3748;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 600;
+  flex: 1;
+}
+
+.synthesize-story-btn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.synthesize-story-btn:hover {
+  background-color: #4338ca;
+}
+
+.debrief-story-btn {
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.debrief-story-btn:hover {
+  background-color: #4b5563;
+}
+
+.story-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.api-config-section {
+  margin-bottom: 30px;
+}
+
+.story-content {
+  margin: 25px 0;
+  line-height: 1.8;
+  color: #4a5568;
+  font-size: 1.1rem;
+  padding: 25px;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  border-left: 4px solid #4f46e5;
+  position: relative;
+}
+
+.choices {
+  margin: 35px 0;
+}
+
+.choices h3 {
+  color: #2d3748;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.timeline-section {
+  margin: 40px 0 20px 0;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.dashboard-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.loading, .error, .no-content {
+  text-align: center;
+  padding: 60px;
+  font-size: 18px;
+}
+
+.error {
+  color: #e53e3e;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .story-viewer {
+    padding: 20px 15px;
+    margin: 10px;
+  }
+  
+  .story-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .story-content {
+    font-size: 1rem;
+    padding: 20px;
+  }
+  
+  .loading, .error, .no-content {
+    padding: 40px 20px;
+  }
+}
